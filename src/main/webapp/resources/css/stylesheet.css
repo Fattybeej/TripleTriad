@@ -1,0 +1,198 @@
+/*
+ * General Stuff of page
+ */
+
+	body{
+		background: #900;
+		color: #000;
+		font: 12px Arial,Helvetica,sans-serif;
+		text-align: center;
+	}
+
+	a{
+		color: #333;
+		text-decoration:none;
+	}
+
+	a:hover{
+		color: #B00;
+		text-decoration:underline;
+	}
+
+	a:active{
+		color: #D00;
+		text-decoration:underline;
+	}
+
+	a:visited{
+		color: #333;
+		text-decoration:none;
+	}
+
+/*
+ * Specific Stuff of layout page
+ */
+
+	.bodyWrapper{
+		margin: 10px auto;
+		width: 900px;
+		text-align: center;
+		border: 1px solid #000;
+		padding: 0px;
+		background: #FFF;
+		border-radius: 10px 10px 10px 10px;
+	}
+
+	.headerWrapper{
+		width: 880px;
+		height: 250px;
+		border: 1px solid #000;
+		background: url('images/header.jpg') #000;
+		margin: 10px auto;
+	}
+
+	.navigationWrapper{
+		width: 880px;
+		border: 1px solid #000;
+		background: #DDD;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.contentWrapper{
+		width: 880px;
+		border: 1px solid #000;
+		background: #FFF;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.footerWrapper{
+		width: 880px;
+		border: 1px solid #000;
+		background: #DDD;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.horizontalRule{
+		height: 1px;
+		width: 99%;
+		border-bottom: 2px dotted #CCC;
+		padding: 0px;
+		margin: 4px auto 5px auto;
+	}
+
+/*
+ * Stuff for the navigation
+ */
+
+	.navigationWrapper ul{
+		display: block;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.navigationWrapper ul li{
+		display: inline-block;
+		padding: 0px;
+	}
+
+	.navigationWrapper ul li >a{
+		display: inline-block;
+		padding: 4px 10px;
+		background: #FFF;
+		border: 1px solid #000;
+		margin: 4px 3px;
+		text-decoration:none;
+	}
+
+	.navigationWrapper ul li >a:hover{
+		background: #CCC;
+		text-decoration:none;
+	}
+
+	.navigationWrapper ul li >a:active{
+		background: #CCC;
+		text-decoration:none;
+	}
+
+	.navigationWrapper ul li >a:visited{
+		background: #FFF;
+		text-decoration:none;
+	}
+
+/*
+ * Stuff for the footer
+ */
+
+	.footerWrapper>p{
+		margin: 5px auto;
+		padding: 0px;
+	}
+
+/*
+ * Content page of rock
+ */
+
+	.boxList{
+		text-align: left;
+		overflow: auto;
+	}
+
+	.boxListRow{
+		margin: 10px 10px;
+		border: 1px solid #CCC;
+		padding: 5px;
+		overflow: auto;
+		background: #CCC;
+		border: 1px solid #AAA;
+		border-radius: 5px 5px 5px 5px;
+	}
+
+	.boxListImage{
+		background: #FFF;
+		border: 1px solid #AAA;
+		height: 100px;
+		width: 100px;
+		display: inline-block;
+		float: left;
+		border-radius: 5px 5px 5px 5px;
+	}
+
+	.boxListText{
+		display: inline-block;
+		float: left;
+		margin: 5px 0px 0px 10px;
+		width: 730px;
+	}
+
+	.boxListTitle{
+		border-bottom: 2px dotted #B00;
+		font: 20px Arial,Helvetica,sans-serif;
+		font-weight: bold;
+		width: 730px;
+	}
+
+	.boxListTitle a:hover{
+		text-decoration: none;
+	}
+
+	.contentWrapper h1{
+		font: 70px Impact,Arial,Helvetica,sans-serif;
+		line-height: 70px;
+		margin: 10px 0px 0px 0px;
+	}
+
+	#boxListImage1{
+		background: url('images/button1.jpg');
+	}
+	#boxListImage2{
+		background: url('images/button2.jpg');
+	}
+	#boxListImage3{
+		background: url('images/button3.jpg');
+	}
+	#boxListImage4{
+		background: url('images/button4.jpg');
+	}

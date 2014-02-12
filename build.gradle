@@ -1,0 +1,35 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'eclipse-wtp'
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+    /* compile 'org.gradle.api.plugins:gradle-tomcat-plugin:0.9.8' */
+    providedCompile 'javax.servlet:servlet-api:2.5'
+    compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
+    runtime 'javax.servlet:jstl:1.1.2'
+}
+
+/*def tomcatVersion = '7.0.42'
+apply plugin: 'tomcat'
+dependencies {
+    compile 'org.apache.httpcomponents:fluent-hc:4.2.6'
+
+    testCompile 'org.apache.commons:commons-io:1.3.2'
+
+    runtime 'org.apache.tomcat:tomcat-jdbc:7.0.27'
+
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}"
+    tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}") {
+        exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
+    }
+    tomcatRunWar.contextPath = ''
+}*/
+
+/* Change context path (base url). otherwise defaults to name of project */
+jettyRunWar.contextPath = ''
